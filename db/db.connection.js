@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/microland', {useNewUrlParser: true, useUnifiedTopology: true
+const url = "mongodb+srv://raaj:MraVDDPpM1Vshu3C@microlandcluster.ctvqk.mongodb.net/?retryWrites=true&w=majority";
+mongoose.connect(url, {useNewUrlParser: true, useUnifiedTopology: true
 }).then(() => {
  console.log('connected to db')
 }).catch((error) => {
